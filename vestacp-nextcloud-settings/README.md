@@ -1,5 +1,5 @@
 <img src="https://global.dewdrive.com/thegreatcompany/emblem/dew_black_logo.png" align="right" />
-<img src="https://vestacp.com/img/vesta_logo.png"/><img src="https://global.dewdrive.com/thegreatcompany/help/github/nextcloud-owncloud-logo.png" />
+<img src="https://vestacp.com/img/vesta_logo.png" align="lrft" /><img src="https://global.dewdrive.com/thegreatcompany/help/github/nextcloud-owncloud-logo.png" />
 
 
 # Vestacp-nextcloud-owncloud - template ( stpl and tpl )
