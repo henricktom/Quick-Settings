@@ -36,12 +36,13 @@ This file is a hidden type file so , you must enable to view hidden files .
 ```
 Use R Temp Redirect flag for testing purpose and to avoid browser caching.
 If you want to make the redirect Temporary , just change it to  R flag OR R=307 ( 307 = Temporary )
-After testing ->
-R = 301 = Tells browser/robot to do a permanent redirect( 301 Moved Permanently )
 
+After testing -> Update R=301
+
+R=301 = Tells browser/robot to do a permanent redirect( 301 Moved Permanently )
 
 L = If the rule was processed, don't process any more.
-
+[No space character allowed inside square bracket ]
 ```
 To read more about flags 
 https://github.com/dewDrive/Quick-Settings/blob/master/htaccess%20-Flag%20List.md
