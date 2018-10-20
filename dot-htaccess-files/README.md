@@ -48,8 +48,7 @@ L = If the rule was processed, don't process any more.
 [No space character allowed inside square bracket ]
 ```
 To read more about flags 
-https://github.com/dewDrive/Quick-Settings/blob/master/htaccess%20-Flag%20List.md
-
+https://github.com/dewDrive/Quick-Settings/blob/master/dot-htaccess-files/htaccess-flag-list.md
 
 ## Method - 1 Generic method all conditions meet http and non-https to non-www.
 
