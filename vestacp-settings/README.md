@@ -17,7 +17,7 @@ cd /usr/local/vesta/data/templates/web/apache2
 wget https://raw.githubusercontent.com/dewDrive/Quick-Settings/master/vestacp-settings/nextcloud.tpl
 wget https://raw.githubusercontent.com/dewDrive/Quick-Settings/master/vestacp-settings/nextcloud.stpl
 ```
-or uplad both files to the root of apache2
+or upload both files to the root of apache2
 
 Reuse - every time.
 Then select them from the Control Panel > Domains > yourdomainname.com > Templates
