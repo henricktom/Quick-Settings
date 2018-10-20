@@ -16,7 +16,7 @@ Its a matter of choice mainly
  5) Cache problems etc.
  
  
-## Why  We choose and stick to www => non-www?
+## Why  We choose not to use www?
 
 1)We believe keeping consistency is very important on the web. <br>
 2)its only 'three letter word less (www)' to type and save many billions of byets on a global scale.<br>
@@ -34,9 +34,10 @@ This file is a hidden type file so , you must enable to view hidden files .
 
 
  ## Method 1 From www to non-www (with ssl) - Generic method and most preferd with lowest over head.
- 
 
-Install from branch/tag/release
+
+File name :- .htaccess
+  
 ```
 gem 'pages-rails', :git => "https://github.com/revoxltd/pages-rails.git", :ref => "4aded"
 gem 'pages-rails', :git => "https://github.com/revoxltd/pages-rails.git", :branch => "2-3-stable"
