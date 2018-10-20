@@ -40,7 +40,7 @@ R=301 = Tells browser/robot to do a permanent redirect. 301 Moved Permanently
 307 = Temporary 
 ```
 
- ## Method - 1 From www to non-www (with ssl) - Generic method and most preferd with lowest over head.
+ ## Method - 1 From www to non-www (with ssl) - Domin encoded method and most preferd with lowest over head.
 
 
 File name :- .htaccess
@@ -51,43 +51,49 @@ RewriteCond %{HTTP_HOST} ^www\.
 RewriteRule ^(.*)$ https://dewdrive.com/$1 [R=301,QSA]
 
 ```
-Just change https://dewdrive.com/ with your domain. Resmove "s" from https for non ssl redirection.
+Just change https://dewdrive.com/ with your domain. Remove "s" from https for non ssl redirection.
+
+Need HSTS Enabled for better working in all edge cases  
 
 
- ## Method - 2 From www to non-www (with ssl) - Generic method and most preferd with lowest over head.
+ ## Method - 2 From www to non-www (with ssl) - Generic method 
 
 
-File name :- .htaccess
+File name :- .htaccess1
   
 ```
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.
-RewriteRule ^(.*)$ https://dewdrive.com/$1 [R=301,QSA]
-
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 ```
-Just change https://dewdrive.com/ with your domain. Resmove "s" from https for non ssl redirection.
+Need HSTS Enabled for better working in all edge cases  
+
+Note :- If you dont have SSL = Remove "s" from https for non ssl redirection.
+
+ ## Method - 3 Generic method all conditions meet http and non-https to non-www.
 
 
- ## Method - 3 From www to non-www (with ssl) - Generic method and most preferd with lowest over head.
-
-
-File name :- .htaccess
+File name :- .htaccess2
   
 ```
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.
-RewriteRule ^(.*)$ https://dewdrive.com/$1 [R=301,QSA]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 ```
-Just change https://dewdrive.com/ with your domain. Resmove "s" from https for non ssl redirection.
 
-
+Note :- If you dont have SSL = Remove "s" from https for non ssl redirection.
 
 ##choose from 
 
 | File Name  | Description      | Redirection Count  |
 | ---------- | --------------   | ------------------ |
 | .htaccess  | Domain Encoded   |       **1**        |
-| .htaccess1 | No Domian        |       **3**        |
-| .htaccess2 | works everyhwere |       **4**        |
+| .htaccess1 | No Domian        |       **1**        |
+| .htaccess2 | works everyhwere |      **2*2**       |
 
