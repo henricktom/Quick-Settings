@@ -29,6 +29,9 @@ Its a matter of choice mainly
 
 ## How to Use the files 
 
+<img src="https://global.dewdrive.com/thegreatcompany/help/github/htaccess.png" align="center" />
+
+
 Just download and  put the file in root ".htaccess" 
 This file is a hidden type file so , you must enable to view hidden files .
 
@@ -102,9 +105,9 @@ Need HSTS Enabled for better working in all edge cases(proper ssl redirection ) 
 
 ##choose from 
 
-| File Name  | SSL Support  | Rediretion        | Description               | Redirection Condition |
+| File Name  | SSL Support  | OverHead          | Description               | Redirection Condition |
 | ---------- |   ---------- | ----------------- | -------------             | ------------------    |
-| .htaccess  |    100%      |  All Case         | Download and Ready to Use |       **1**           |
-| .htaccess1 |    90%       |  90%Case          | & Change to urdomain.com  |       **1**           |
-| .htaccess2 |    90%       |  90%Case          | Rename to .htacceess      |      **2||2**          |
+| .htaccess  |    100%      |  All Case + Low   | Download and Ready to Use |     **1 or 1**        |
+| .htaccess1 |    90%       |  Lowest           | & Change to urdomain.com  |       **1**           |
+| .htaccess2 |    90%       |  Low              | Rename to .htacceess      |       **1**           |
 
