@@ -39,24 +39,23 @@ This file is a hidden type file so , you must enable to view hidden files .
 File name :- .htaccess
   
 ```
-gem 'pages-rails', :git => "https://github.com/revoxltd/pages-rails.git", :ref => "4aded"
-gem 'pages-rails', :git => "https://github.com/revoxltd/pages-rails.git", :branch => "2-3-stable"
-gem 'pages-rails', :git => "https://github.com/revoxltd/pages-rails.git", :tag => "v2.3.5"
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule ^(.*)$ https://dewdrive.com/$1 [R=301,QSA]
+
 ```
-And then execute:
+Just change https://dewdrive.com/ with your domain. Resmove "s" from https for non ssl redirection.
 
     $ bundle
 
-
-You can update varriables as you wish. To see the varriables used open the file stylesheets/_var.scss 	[Click here](https://github.com/revoxltd/pages-rails/blob/master/vendor/assets/stylesheets/_var.scss)
 
  ```
 
 ##choose from 
 
-| File Name | Description | Redirection Count |
-| ------ | ----------- | ----------- |
-| .htaccess | Domain Encoded | **1** |
-| .htaccess1 | No Domian | **3** |
-| .htaccess2| works everyhwere | **4**
+| File Name  | Description      | Redirection Count  |
+| ---------- | --------------   | ------------------ |
+| .htaccess  | Domain Encoded   |       **1**        |
+| .htaccess1 | No Domian        |       **3**        |
+| .htaccess2 | works everyhwere |       **4**        |
 
