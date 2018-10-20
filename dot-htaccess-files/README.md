@@ -94,10 +94,11 @@ Need HSTS Enabled for better working in all edge cases(proper ssl redirection ) 
 File name :- .htaccess3
   
 ```
-RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+   <IfModule mod_rewrite.c>
+         RewriteEngine On
+       RewriteCond %{HTTPS} !=on
+       RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+    </IfModule>
 ```
 
 Note :- If you dont have SSL = Remove "s" from https for non ssl redirection.
