@@ -14,8 +14,8 @@ Download these files into /usr/local/vesta/data/templates/web/apache2
 Follow the steps and these files 
 ```
 cd /usr/local/vesta/data/templates/web/apache2
-wget https://raw.githubusercontent.com/dewDrive/Quick-Settings/master/vestacp-nextcloud-settings/nextcloud.tpl
-wget https://raw.githubusercontent.com/dewDrive/Quick-Settings/master/vestacp-nextcloud-settings/nextcloud.stpl
+wget https://raw.githubusercontent.com/dewDrive/Quick-Settings/master/vestacp-settings/nextcloud.tpl
+wget https://raw.githubusercontent.com/dewDrive/Quick-Settings/master/vestacp-settings/nextcloud.stpl
 ```
 or uplad both files to the root of apache2
 
