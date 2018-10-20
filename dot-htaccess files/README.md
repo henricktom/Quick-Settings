@@ -86,7 +86,7 @@ Just change https://dewdrive.com/ with your domain. Remove "s" from https for no
 Need HSTS Enabled for better working in all edge cases(proper ssl redirection ) (or) Use => Method 1
 
 
- ## Method - 2 From www to non-www (with ssl) - Generic method 
+ ## Method - 3 From www to non-www (with ssl) - Generic method 
 
 
 File name :- .htaccess3
