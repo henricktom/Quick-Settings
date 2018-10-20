@@ -1,6 +1,6 @@
 <img src="https://global.dewdrive.com/thegreatcompany/emblem/dew_black_logo.png" align="right" />
 <img src="https://vestacp.com/img/vesta_logo.png" align="right" />
-<img src="https://global.dewdrive.com/thegreatcompany/emblem/nextcloud-logo.png" align="right" />
+<img src="https://global.dewdrive.com/thegreatcompany/help/github/nextcloud-logo.png" align="right" />
 
 
 ## vestacp-nextcloud-template both stpl and tpl - 
