@@ -107,6 +107,6 @@ Need HSTS Enabled for better working in all edge cases(proper ssl redirection ) 
 | File Name  | SSL Support  | OverHead          | Description               | Redirection Condition |
 | ---------- |   ---------- | ----------------- | -------------             | ------------------    |
 | .htaccess  |    100%      |  All Case + Low   | Download and Ready to Use |     **1 or 1**        |
-| .htaccess1 |    90%       |  Lowest           | & Change to urdomain.com  |       **1**           |
-| .htaccess2 |    90%       |  Low              | Rename to .htacceess      |       **1**           |
+| .htaccess2 |    90%       |  Lowest           | & Change to urdomain.com  |       **1**           |
+| .htaccess3 |    90%       |  Low              | Rename to .htacceess      |       **1**           |
 
