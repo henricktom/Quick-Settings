@@ -1,4 +1,6 @@
 <img src="https://global.dewdrive.com/greatcompany/dew_black_logo.png" align="right" />
+<img src="https://global.dewdrive.com/greatcompany/help/github/www-or-nonwww.jpg" />
+
 
 
 ## Why we should stick with - either www or non-www style.
