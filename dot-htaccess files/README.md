@@ -34,49 +34,23 @@ This file is a hidden type file so , you must enable to view hidden files .
 
 ## Tip Before you use/test the files 
 ```
-Use R Temp Redirect flag for testing purpose and to avoid browser caching. If you want to make the redirect permanent , just change the Just R flag to R=307 .
+Use R Temp Redirect flag for testing purpose and to avoid browser caching.
+If you want to make the redirect Temporary , just change it to  R flag OR R=307 ( 307 = Temporary )
+After testing ->
+R = 301 = Tells browser/robot to do a permanent redirect( 301 Moved Permanently )
+
 
 L = If the rule was processed, don't process any more.
-R=301 = Tells browser/robot to do a permanent redirect. 301 Moved Permanently ( 307 = Temporary )
 
-To read more about flags https://github.com/dewDrive/Quick-Settings/blob/master/htaccess%20-Flag%20List.md
 ```
+To read more about flags 
+https://github.com/dewDrive/Quick-Settings/blob/master/htaccess%20-Flag%20List.md
 
- ## Method - 1 From www to non-www (with ssl) - Domin encoded method and most preferd with lowest over head.
+
+## Method - 1 Generic method all conditions meet http and non-https to non-www.
 
 
 File name :- .htaccess
-  
-```
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.
-RewriteRule ^(.*)$ https://dewdrive.com/$1 [R=301,QSA]
-
-```
-Just change https://dewdrive.com/ with your domain. Remove "s" from https for non ssl redirection.
-
-Need HSTS Enabled for better working in all edge cases  
-
-
- ## Method - 2 From www to non-www (with ssl) - Generic method 
-
-
-File name :- .htaccess1
-  
-```
-RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
-```
-Need HSTS Enabled for better working in all edge cases  
-
-Note :- If you dont have SSL = Remove "s" from https for non ssl redirection.
-
- ## Method - 3 Generic method all conditions meet http and non-https to non-www.
-
-
-File name :- .htaccess2
   
 ```
 RewriteCond %{HTTPS} off
@@ -88,14 +62,48 @@ RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 ```
+Works everywhere on every condition.
+Note :- If you dont have SSL = Remove "s" from https for non ssl redirection.
+
+
+ ## Method - 2 From www to non-www (with ssl) - Domin encoded method and most preferd with lowest over head.
+
+
+File name :- .htaccess2
+  
+```
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule ^(.*)$ https://dewdrive.com/$1 [R=301,QSA]
+
+```
+Just change https://dewdrive.com/ with your domain. Remove "s" from https for non ssl redirection.
+
+Need HSTS Enabled for better working in all edge cases(proper ssl redirection ) (or) Use => Method 1
+
+
+ ## Method - 2 From www to non-www (with ssl) - Generic method 
+
+
+File name :- .htaccess3
+  
+```
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+```
 
 Note :- If you dont have SSL = Remove "s" from https for non ssl redirection.
+Need HSTS Enabled for better working in all edge cases(proper ssl redirection ) (or) Use => Method 1
+
+ 
 
 ##choose from 
 
-| File Name  | Description      | Redirection Count  |
-| ---------- | --------------   | ------------------ |
-| .htaccess  | Domain Encoded   |       **1**        |
-| .htaccess1 | No Domian        |       **1**        |
-| .htaccess2 | works everyhwere |      **2*2**       |
+| File Name  | SSL Support  | Rediretion        | Description               | Redirection Condition |
+| ---------- |   ---------- | ----------------- | -------------             | ------------------    |
+| .htaccess  |    100%      |  All Case         | Download and Ready to Use |       **1**           |
+| .htaccess1 |    90%       |  90%Case          | & Change to urdomain.com  |       **1**           |
+| .htaccess2 |    90%       |  90%Case          | Rename to .htacceess      |      **2*2**          |
 
