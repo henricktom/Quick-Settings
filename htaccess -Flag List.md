@@ -3,7 +3,7 @@
 
 - C      = (chained with next rule)
 - CO     = cookie (set specified cookie)
--        =  var:value (set environment variable var to value)
+- E        =  var:value (set environment variable var to value)
 - F      = (forbidden - sends a 403 header to the user)
 - G      =  (gone - no longer exists)
 - H      =  handler (set handler)
