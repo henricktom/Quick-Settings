@@ -1,5 +1,5 @@
 <img src="https://global.dewdrive.com/thegreatcompany/emblem/dew_black_logo.png" align="right" />
-<img src="https://global.dewdrive.com/thegreatcompany/help/github/www-or-nonwww.jpg" />
+<img src="https://global.dewdrive.com/thegreatcompany/help/github/www-or-nonwww.jpg" align="center" />
 
 
 
