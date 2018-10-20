@@ -21,6 +21,7 @@ Its a matter of choice mainly
 1)We believe keeping consistency is very important on the web. <br>
 2)its only 'three letter word less (www)' to type and save many billions of byets on a global scale.<br>
 3)We belive it will look bit more nicer and should follow non-www method. <br>
+<img src="https://global.dewdrive.com/thegreatcompany/help/github/2011-what-do-people-type-in-the-address-bar.png" align="center" />
 
 
 
