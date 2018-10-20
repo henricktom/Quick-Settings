@@ -2,10 +2,10 @@
 <img src="https://vestacp.com/img/vesta_logo.png"/><img src="https://global.dewdrive.com/thegreatcompany/help/github/nextcloud-owncloud-logo.png" />
 
 
-## vestacp-nextcloud-template both stpl and tpl - 
+# Vestacp-nextcloud-owncloud - template ( stpl and tpl )
 Web templates
 
-# Vesta Control Panel =>  Nextcloud or Owncloud under Apache. 
+## Vesta Control Panel =>  Nextcloud or Owncloud under Apache. 
 
 Supports with nginx and Apache proxy too. 
 
