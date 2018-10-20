@@ -1,2 +1,2 @@
 # Quick-Settings
-Simple - devOps - stpl and tpl files 
+Simple - devOps hacks
