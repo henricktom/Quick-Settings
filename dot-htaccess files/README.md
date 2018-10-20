@@ -105,5 +105,5 @@ Need HSTS Enabled for better working in all edge cases(proper ssl redirection ) 
 | ---------- |   ---------- | ----------------- | -------------             | ------------------    |
 | .htaccess  |    100%      |  All Case         | Download and Ready to Use |       **1**           |
 | .htaccess1 |    90%       |  90%Case          | & Change to urdomain.com  |       **1**           |
-| .htaccess2 |    90%       |  90%Case          | Rename to .htacceess      |      **2*2**          |
+| .htaccess2 |    90%       |  90%Case          | Rename to .htacceess      |      **2||2**          |
 
