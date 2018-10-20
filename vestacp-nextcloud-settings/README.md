@@ -1,14 +1,23 @@
-## vestacp-nextcloud-template both stpl and tpl
-Web templates for Vesta Control Panel to run Nextcloud or Owncloud under Apache. Works with nginx proxy too. 
+<img src="https://global.dewdrive.com/thegreatcompany/emblem/dew_black_logo.png" align="right" />
+<img src="https://vestacp.com/img/vesta_logo.png" align="right" />
+
+
+## vestacp-nextcloud-template both stpl and tpl - 
+Web templates
+
+# Vesta Control Panel =>  Nextcloud or Owncloud under Apache. 
+
+Supports with nginx and Apache proxy too. 
 
 Download these files into /usr/local/vesta/data/templates/web/apache2 
 
 Follow the steps and these files 
 ```
 cd /usr/local/vesta/data/templates/web/apache2
-wget https://raw.githubusercontent.com/plutocrat/vestacp-nextcloud-template/master/nextcloud.tpl
-wget https://raw.githubusercontent.com/plutocrat/vestacp-nextcloud-template/master/nextcloud.stpl
+wget https://raw.githubusercontent.com/dewDrive/Quick-Settings/master/vestacp-nextcloud-settings/nextcloud.tpl
+wget https://raw.githubusercontent.com/dewDrive/Quick-Settings/master/vestacp-nextcloud-settings/nextcloud.stpl
 ```
+or uplad both files to the root of apache2
 
 Reuse - every time.
 Then select them from the Control Panel > Domains > yourdomainname.com > Templates
