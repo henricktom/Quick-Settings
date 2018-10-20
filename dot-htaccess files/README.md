@@ -1,14 +1,10 @@
 <img src="https://global.dewdrive.com/greatcompany/dew_black_logo.png" align="right" />
 
-## Why ?
 
-1)We believe keeping consistency is very important on the web. <br>
-2)its only 'three letter word less (www)' to type and save many billions of byets on a global scale.<br>
-3)We belive it will look bit more nicer and should follow non-www method. <br>
-
-
-## Please Note It must be either www or non-www.
- - if you choose, then stick to it no matter what .
+## Why we should stick with - either www or non-www style.
+Its a matter of choice mainly 
+ 
+ - but if you choose, then stick to it no matter what.
  if not
  
  1) It will surely spoil your brand reputation in Search engine by competing with your own keywords 
@@ -16,6 +12,13 @@
  3) It affects and gives us many broke link
  4) Redirection loops.
  5) Cache problems etc.
+ 
+ 
+## Why  We choose and stick to www => non-www?
+
+1)We believe keeping consistency is very important on the web. <br>
+2)its only 'three letter word less (www)' to type and save many billions of byets on a global scale.<br>
+3)We belive it will look bit more nicer and should follow non-www method. <br>
 
 
 
@@ -24,7 +27,7 @@
 
 ## How to Use the files 
 
-Just download and  put the file in root ".htaccess" (its a hidden file)
+Just download and  put the file in root ".htaccess" 
 This file is a hidden type file so , you must enable to view hidden files .
 
 
