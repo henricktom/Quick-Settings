@@ -18,7 +18,7 @@ wget https://raw.githubusercontent.com/dewDrive/Quick-Settings/master/vestacp-se
 wget https://raw.githubusercontent.com/dewDrive/Quick-Settings/master/vestacp-settings/nextcloud.stpl
 ```
 or upload both files to the root of apache2
-
+Make sure to enable the Apache headers module using ```a2enmod headers``` or else Apache will not start.
 Reuse - every time.
 Then select them from the Control Panel > Domains > yourdomainname.com > Templates
 
